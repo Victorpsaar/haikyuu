@@ -11,7 +11,7 @@
 
 body {
     color: #eee;
-    background-color: #f5ffa0;
+    background-color: #ffeacb;
     font-family: "Poppins", sans-serif;
 }
 
@@ -83,16 +83,10 @@ section {
 
     iframe {
         display: block;
-        width: 90%;
-        height: 80vh;
-
-        @media (min-width: 769px) and (max-width: 1023px) {
-            height: 45vh;
-        }
+        width: 100%;
 
         @media (max-width: 768px) {
-            height: 30vh;
-            width: 100%;
+            max-height: 30vh;
         }
     }
 }
