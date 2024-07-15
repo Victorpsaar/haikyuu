@@ -1,0 +1,98 @@
+@use 'nav.scss';
+@use 'sinopse.scss';
+@use 'chars.scss';
+@use 'footer';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #eee;
+    background-color: #f5ffa0;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    padding: 16px 0;
+
+    @media (max-width: 768px) {
+        padding: 16px 0;
+    }
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+
+    @media (max-width: 1023px) {
+        padding: 0 16px;
+    }
+
+    &--flex {
+        display: flex;
+
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: left;
+    color: #f5c41f;
+    padding-bottom: 16px;
+
+    &--deco {
+        color: #231f20;
+        font-size: 24px;
+    }
+}
+
+.text {
+    color: #231f20;
+    font-size: 16px;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.banner {
+    &__image {
+        width: 100%;
+        box-shadow: 0 5px 35px rgba($color: #000000, $alpha: 0.5);
+    }
+}
+
+.best {
+    display: block;
+    background-color: #eee;
+
+    .container--flex {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    iframe {
+        display: block;
+        width: 90%;
+        height: 80vh;
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            height: 45vh;
+        }
+
+        @media (max-width: 768px) {
+            height: 30vh;
+            width: 100%;
+        }
+    }
+}

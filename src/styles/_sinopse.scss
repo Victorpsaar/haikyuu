@@ -1,0 +1,33 @@
+.sinopse {
+    background-color: #eee;
+
+    .container--flex {
+        align-items: center;
+    }
+    
+    &__image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__text {
+        padding-left: 16px;
+        width: 55vw;
+
+        @media (min-width: 769px) and (max-width: 1023px) {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        p {
+            margin-top: 8px;
+        }
+    }
+}
